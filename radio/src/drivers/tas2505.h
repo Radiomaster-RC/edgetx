@@ -95,3 +95,5 @@ typedef struct {
 int tas2505_probe(tas2505_t* dev, etx_i2c_bus_t bus, uint16_t addr);
 int tas2505_init(tas2505_t* dev);
 void tas2505_set_volume(tas2505_t* dev, uint8_t volume);
+void Set_Speaker_power(tas2505_t* dev, uint8_t value);
+void Set_Headphone_power(tas2505_t* dev, uint8_t value);

@@ -38,6 +38,8 @@
  #endif
 #elif defined(PCBTX15)
  #include "yaml_datastructs_tx15.cpp"
+#elif defined(PCBTX16MK3)
+ #include "yaml_datastructs_tx16mk3.cpp"
 #elif defined(PCBPL18)
  #if defined(RADIO_NB4P)
   #include "yaml_datastructs_nb4p.cpp"

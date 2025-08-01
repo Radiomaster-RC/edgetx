@@ -149,3 +149,28 @@ void tas2505_set_volume(tas2505_t* dev, uint8_t volume)
     tas2505_write_reg(dev, TAS2505_HP_VOL, vol);
   }
 }
+
+void Set_Speaker_power(tas2505_t* dev,uint8_t value)
+{
+    if(value > 0)
+    {
+        tas2505_write_reg(dev, TAS2505_SPKAMPCTRL1, 0x02);
+    }
+    else
+    {
+        tas2505_write_reg(dev, TAS2505_SPKAMPCTRL1, 0x00);
+    }
+
+}
+
+void Set_Headphone_power(tas2505_t* dev,uint8_t value)
+{
+    if(value > 0)
+    {
+        tas2505_write_reg(dev, TAS2505_HPL_OUT, 0x20);
+    }
+    else
+    {
+        tas2505_write_reg(dev, TAS2505_HPL_OUT, 0x00);
+    }
+}

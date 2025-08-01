@@ -405,6 +405,9 @@ void generalDefault()
 #if defined(RADIO_TX15)
   g_eeGeneral.backlightBright = 50; // Screen looks off if not set high enough
 #endif
+#if defined(RADIO_TX16MK3)
+  g_eeGeneral.backlightBright = 50; // Screen looks off if not set high enough
+#endif
 #endif
 
   // disable Custom Script
